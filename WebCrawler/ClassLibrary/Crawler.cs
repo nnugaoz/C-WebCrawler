@@ -22,15 +22,15 @@ namespace ClassLibrary
             return lRet;
         }
 
-        public Boolean Matches(ref string pText, string pExpr, ref List<String> pResult)
+        public Boolean Matches(string pText, string pExpr, ref List<Match> pResult)
         {
             Boolean lRet = false;
 
-            MatchCollection mc = Regex.Matches(pText, pExpr);
+            MatchCollection mc = Regex.Matches(pText, pExpr,RegexOptions.Singleline);
 
             foreach (Match m in mc)
             {
-                pResult.Add(m.Value);
+                pResult.Add(m);
             }
             return lRet;
         }
