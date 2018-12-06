@@ -19,10 +19,16 @@ namespace ConsoleApp
 
             //return;
 
+            ////国网电子商务平台
+            //ecp_sgcc_com_cn_re lecp_sgcc_com_cn_re = new ecp_sgcc_com_cn_re();
+            ////抓取【物资招标公告】
+            //lecp_sgcc_com_cn_re.WZ_Zbgg();
+
             //国网电子商务平台
-            ecp_sgcc_com_cn lecp_sgcc_com_cn = new ecp_sgcc_com_cn();
+            ecp_sgcc_com_cn_re lecp_sgcc_com_cn_re = new ecp_sgcc_com_cn_re();
             //抓取【物资招标公告】
-            lecp_sgcc_com_cn.WZ_Zbgg();
+            lecp_sgcc_com_cn_re.WZ_Zbgg();
+
             Console.WriteLine("Done!");
             Console.ReadKey();
         }

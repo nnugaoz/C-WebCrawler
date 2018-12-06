@@ -41,7 +41,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Crawler.cs" />
-    <Compile Include="ecp_sgcc_com_cn.cs" />
+    <Compile Include="ecp_sgcc_com_cn_model.cs" />
+    <Compile Include="ecp_sgcc_com_cn_xml.cs" />
+    <Compile Include="ecp_sgcc_com_cn_re.cs" />
     <Compile Include="FileHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
